@@ -1,0 +1,43 @@
+exp1:
+cd
+git init
+echo. > myfile.txt
+dir
+git add myfile.txt
+git commit -m "...."
+git log --oneline
+
+exp2:
+git checkout master
+git checkout -b feature-branch\
+git add .
+git commit -m "Your commit message for feature-branch"
+git checkout master
+git merge feature-branch
+
+exp3:
+echo "Hello World" > newfile.txt
+git add newfile.txt
+git stash save "My stash message"
+git checkout target-branch
+git checkout -b target-branch
+git stash apply
+git restore --staged newfile.txt (optional)
+git stash pop
+
+exp4:
+cd
+git init
+git clone <repository_url>
+
+exp5:
+mkdir
+cd
+vi 
+
+exp10:
+ git log --author="JohnDoe" --since="2023-01-01" --until="2023-12-31"
+
+
+exp11:
+git log -n 5 
